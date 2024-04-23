@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typing Test</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="startModal" class="modal">
+        <div class="modal-content">
+            <h2>Select Test Duration</h2>
+            <button class="time-btn" data-time="30">30 Seconds</button>
+            <button class="time-btn" data-time="60">1 Minute</button>
+            <button class="time-btn" data-time="180">3 Minutes</button>
+            <button class="time-btn" data-time="300">5 Minutes</button>
+        </div>
+    </div>
+    <div id="resultModal" class="modal">
+        <div class="modal-content">
+            <h2>Test Results</h2>
+            <p id="resultText">Your speed and accuracy results will appear here.</p>
+            <button onclick="window.location.reload()">Try Again</button>
+        </div>
+    </div>
+    <div class="container">
+        <div class="typing-area"></div>
+        <div class="stats">
+            <span class="timer">0</span>
+        </div>
+    </div>
+    <p class="version">Version 1.0 | Typing Master | Created by <a target="_blank" href="https://vinaymunjal.com">Vinay
+            Munjal</a></p>
+    <audio id="typeSound" src="sound.mp3"></audio>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="paras.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
